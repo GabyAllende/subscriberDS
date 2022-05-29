@@ -1,8 +1,10 @@
 var mqtt = require('mqtt')
 var client = mqtt.connect('mqtt://' + process.env.brokerip)
+    //var client = mqtt.connect('mqtt://research.upb.edu')
 
 function ConnectEvent() {
     client.subscribe(process.env.topic)
+        //client.subscribe('libros/#')
 }
 
 function MessageEvent(mytopic, message) {
