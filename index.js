@@ -1,5 +1,5 @@
 var mqtt = require('mqtt')
-var client = mqtt.connect('mqtt://' + process.env.brokerip)
+var client = mqtt.connect('mqtt://' + process.env.brokerip + ':' + process.env.port)
     //var client = mqtt.connect('mqtt://research.upb.edu')
 
 function ConnectEvent() {

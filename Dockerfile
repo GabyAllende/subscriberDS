@@ -15,7 +15,7 @@ RUN npm install
 # Bundle app source
 COPY . .
 ENV topic='libros'
-ENV brokerip = 'research.upb.edu:21212'
+ENV brokerip = 'research.upb.edu'
 ENV port = 1883
 
 CMD [ "node", "index.js" ]
