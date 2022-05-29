@@ -16,6 +16,6 @@ RUN npm install
 COPY . .
 ENV topic='libros'
 ENV brokerip = 'research.upb.edu'
-ENV port = 1883
+ENV port = 21212
 
 CMD [ "node", "index.js" ]
